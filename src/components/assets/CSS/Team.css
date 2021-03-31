@@ -1,5 +1,6 @@
 :root {
-    --fontName: "IRANSansWeb"
+    --fontName: "IRANSansWeb", sans-serif;
+    --darkColor: #1c2237;
   }
 
 .banner {
@@ -104,9 +105,20 @@ text-align: center;
     justify-content: center;
 }
 
+.col-item-name {
+    justify-content: center;
+    color: var(--darkColor);
+    font-family: var(--fontName);
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 100%;
+    text-align: center;
+}
+
 .col-item-title {
     justify-content: center;
-    color: black;
+    /* color: var(--darkColor); */
+    color: #52608f;;
     font-family: var(--fontName);
     font-size: 18px;
     max-width: 100%;
