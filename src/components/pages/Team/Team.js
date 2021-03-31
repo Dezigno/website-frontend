@@ -21,7 +21,7 @@ function Home() {
               </div>
           </div>
           <div className="team">
-                <div className="team-container container2">
+                <div className="container2">
                     <div
                         className='row team-row'
                     >

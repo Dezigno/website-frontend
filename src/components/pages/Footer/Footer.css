@@ -152,6 +152,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-family: "PT Sans", sans-serif;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
