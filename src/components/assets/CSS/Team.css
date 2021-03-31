@@ -1,0 +1,130 @@
+:root {
+    --fontName: "IRANSansWeb"
+  }
+
+.banner {
+    /* background-image:-moz-linear-gradient('Top to Buttom', '#1c2237', '#fff'); */
+    background-color: #1c2237;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.banner-header {
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.banner-title {
+    font-family: "IRANSansWeb";
+    font-size: 3rem;
+}
+
+.banner-hLine-container {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    /* margin-top: 40px; */
+    padding-top: 40px;
+}
+
+.banner-hLine {
+    width: 50%;
+    opacity: 0.2;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    height: max-content;
+
+    color: #fff;
+    padding: 160px 0px;
+    padding-right: auto;
+    padding-left: auto;
+}
+
+.container2 {
+    /* z-index: 1; */
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+  
+
+.team_hero-row {
+    align-items: center;
+    justify-content: center;
+}
+
+.row-row {
+display: flex;
+margin-right: -15px;
+margin-bottom: -15px;
+margin-left: -15px;
+flex-wrap: wrap;
+align-content: stretch;
+}
+  
+.team-col {
+margin-bottom: 15px;
+padding-right: 15px;
+padding-left: 15px;
+flex: 1;
+max-width: 25%;
+flex-basis: 50%;
+}
+
+.team-text-wrapper {
+max-width: 250px;
+padding-top: 0;
+padding-bottom: 60px;
+
+}
+
+.col-item-img {
+    width: 80%;
+    justify-content: center;
+}
+
+.col-item-title {
+    justify-content: center;
+    color: black;
+    font-family: "";
+}
+
+@media screen and (max-width: 768px) {
+.teamtext-wrapper {
+    padding-bottom: 65px;
+}
+
+.col {
+        max-width: 100%;
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 500) {
+    .teamtext-wrapper {
+        padding-bottom: 65px;
+    }
+    
+    .team-col {
+            max-width: 100%;
+            flex-basis: 50%;
+    }
+}
+    

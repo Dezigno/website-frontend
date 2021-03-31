@@ -43,7 +43,33 @@
     margin-bottom: 16px;
     border: 1px solid #fff;
   }
+
+  .footer-contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-bottom: 24px */
+    /* padding: 24px; */
+    padding: 10px;
+    padding-top: 24px;
+    color: #fff;
+  }
+
+  .footer-contactus > p {
+    font-family: "IRANSansWeb";
+  }
   
+  .footer-contactus-number-icon {
+    display: inline;
+    direction: ltr;
+  }
+
+  .footer-contactus-number-{
+    padding-left: 10px;
+  }
+
   .footer-links {
     width: 100%;
     max-width: 1000px;

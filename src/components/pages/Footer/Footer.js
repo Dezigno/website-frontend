@@ -3,18 +3,18 @@ import './Footer.css';
 import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
 import {
-  FaFacebook,
+  FaTelegramPlane,
   FaInstagram,
-  FaYoutube,
   FaTwitter,
   FaLinkedin
 } from 'react-icons/fa';
+import { AiFillPhone } from 'react-icons/ai'
 import { MdFingerprint } from 'react-icons/md';
 
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
+      {/* <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           Join our exclusive membership to receive the latest news and trends
         </p>
@@ -32,81 +32,51 @@ function Footer() {
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
+      </section> */}
+
+      <section className="footer-contactus">
+        <p className="footer-contactus-heading">
+          برای کسب اطلاعات بیشتر ویا برفراری ارتباط با پشتیبانان ما می‌توانید به صفحه های مجازی دزیگنو مراجعه کنید و یا با شماره زیر تماس حاصل فرمایید.
+        </p>
+        <br></br>
+        <div className="footer-contactus-number-icon">
+          <AiFillPhone /> 
+          <b className="footer-contactus-number-">
+          +98 910 0428 509 
+          </b>
+        </div>
       </section>
-      <div className='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div className='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
-          </div>
-          <div className='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div className='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div className='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
-        </div>
-      </div>
+
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               <MdFingerprint className='navbar-icon' />
-              LAVISH
+              <b>DEZIGNO</b> 
             </Link>
           </div>
-          <small className='website-rights'>LAVISH © 2020</small>
+          <small className='website-rights'>تمامی حقوق مادی و معنوی متعلق به دزیگنو می‌باشد</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
-              to='/'
+              to='https://t.me/dezigno_ir'
               target='_blank'
-              aria-label='Facebook'
+              aria-label='Telegram'
             >
-              <FaFacebook />
+              <FaTelegramPlane />
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
+              to='https://www.instagram.com/dezigno_ir/'
               target='_blank'
+              replace="true"
               aria-label='Instagram'
             >
               <FaInstagram />
             </Link>
             <Link
               className='social-icon-link'
-              to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
-              }
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <FaYoutube />
-            </Link>
-            <Link
-              className='social-icon-link'
-              to='/'
+              to='https://twitter.com/dezigno_ir'
               target='_blank'
               aria-label='Twitter'
             >
@@ -114,7 +84,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
+              to='https://www.linkedin.com/company/dezigno-ir/'
               target='_blank'
               aria-label='LinkedIn'
             >

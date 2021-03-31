@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { MdFingerprint } from 'react-icons/md'
 import { IconContext } from 'react-icons/lib'
 
 import logo from './images/dezigno_white_logo.png'
@@ -39,20 +38,21 @@ function Navbar() {
           <nav className='navbar'>
             <div className='navbar-container container'>
               <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                {/* <MdFingerprint className='navbar-icon' /> */}
-                {/* <img src={logo} alt="dezigno logo"></img> */}
+                {/* <img className="navbar-icon" src={logo} alt=s"dezigno logo"></img> */}
                 <b>DEZIGNO</b>
               </Link>
+
               <div className='menu-icon' onClick={handleClick}>
                 {click ? <FaTimes /> : <FaBars />}
               </div>
+              
               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
                   <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                     خانه
                   </Link>
                 </li>
-                <li className='nav-item'>
+                <li className='nav-item'>                
                   <Link
                     to='/services'
                     className='nav-links'
@@ -68,6 +68,15 @@ function Navbar() {
                     onClick={closeMobileMenu}
                   >
                     محصولات
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link
+                    to='/team'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                  >
+                    تیم ما
                   </Link>
                 </li>
                 <li className='nav-btn'>
