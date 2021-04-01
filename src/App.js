@@ -18,7 +18,7 @@ function App() {
       <Home id="home"/>
       <Services id="services"/>
       <Products id="products"/>
-      <SignUp id="signup"/>
+      {/* <SignUp id="signup"/> */}
       <Team />
       <Footer />
     </Router>

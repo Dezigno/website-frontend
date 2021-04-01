@@ -8,6 +8,7 @@ function Services() {
     <div className="services-container">
       {/* <Pricing /> */}
       <HeroSection {...homeObjOne} />
+      <HeroSection {...homeObjTwo} />
       <HeroSection {...homeObjThree} />
     </div>
   );

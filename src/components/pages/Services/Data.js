@@ -3,9 +3,9 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'مدیریت حساب راحت',
-    headline: 'دسترسی آسان با اطلاعات فروش',
+    headline: 'سرویس های pod',
     description:
-      'با استفاده از چارت هایی که برای شما فراهم شده می‌توانید اطلاعات آماری فروش های خورد را بررسی و مدیریت کنید',
+      'سرویس pod ما تمامی خدمات مورد نیاز برای تولید و فروش مرچ، از راه اندازی وبسایت فروشگاهی، تولید انواع محصولات با بهترین کیفیت، بسته بندی، ارسال و خدمات پس از فروش آنها را به طور کامل انجام داده و تمامی دغدغه های فرآیند فروش را از دوش شما برمیدارد. به راحتی شروع به طراحی کنید، محصولات مد نظر خود را بسازید و با چند کلیک فروشگاه خود را آماده کنید و تمامی نگرانی های مربوط به فروش، روال های قانونی و تولیدی و حمل و نقل را به ما بسپارید',
     buttonLabel: 'اطلاعات بیشتر',
     imgStart: '',
     img: 'images/chart.png',
@@ -13,13 +13,13 @@ export const homeObjOne = {
   };
   
   export const homeObjTwo = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: '100% SECURE',
-    headline: 'Stay protected 24/7 anywhere anytime',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '۱۰۰٪ ایمن',
+    headline: 'چرا باید از pod استفاده کرد',
     description:
-      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
+      "رفع تمام نگرانی ها و مشکلات مربوط به فروش، حمل و نقل و مسائل قانونی.  امکان تغییر و تعریف طرح های جدید و بسیار به سادگی برای مناسبت های مختلف همچون هالووین، کریسمس و غیره بدون نگرانی از فروش کم طرح ها. عدم نیاز به هیچگونه فضای فیزیکی برای انبار، فروشگاه و غیره.  راه اندازی ساده فروشگاه و تعریف محصولات در چند دقیقه. بدون نیاز به دانشی از صنعت چاپ، محصولات و غیره",
     buttonLabel: 'Learn More',
     imgStart: '',
     img: 'images/svg-5.svg',
@@ -27,9 +27,9 @@ export const homeObjOne = {
   };
   
   export const homeObjThree = {
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'طراحی آسان',
     headline: 'مرچ های با طرح های شما',
     description:
