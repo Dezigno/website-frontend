@@ -5,10 +5,10 @@ import Pricing from '../../Pricing';
 
 function SignUp() {
   return (
-    <>
+    <div className="signup">
       <HeroSection {...homeObjOne} />
       {/* <HeroSection {...homeObjThree} /> */}
-    </>
+    </div>
   );
 }
 

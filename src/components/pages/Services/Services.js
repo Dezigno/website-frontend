@@ -5,11 +5,11 @@ import Pricing from '../../Pricing';
 
 function Services() {
   return (
-    <>
+    <div className="services-container">
       {/* <Pricing /> */}
       <HeroSection {...homeObjOne} />
       <HeroSection {...homeObjThree} />
-    </>
+    </div>
   );
 }
 

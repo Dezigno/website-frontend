@@ -4,9 +4,9 @@ import { homeObjOne } from './Data'
 
 function Home() {
     return (
-        <>
+        <div className="home-container">
           <HeroSection {...homeObjOne}/>  
-        </>
+        </div>
     )
 }
 

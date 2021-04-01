@@ -6,7 +6,7 @@ import '../../assets/CSS/Team.css'
 
 function Home() {
     return (
-        <>
+        <div className="team-container">
           {/* <HeroSection {...homeObjOne}/>   */}
           <div className="banner">
               <div className="container">
@@ -72,7 +72,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
