@@ -113,7 +113,7 @@ function Navbar() {
                     تیم ما
                   </Link>
                 </li>
-                <li className='nav-btn'>
+                {/* <li className='nav-btn'>
                   {button ? (
                     <Link 
                       to='signup' 
@@ -150,7 +150,7 @@ function Navbar() {
                       </Button>
                     </Link>
                   )}
-                </li>
+                </li> */}
               </ul>
             </div>
           </nav>
