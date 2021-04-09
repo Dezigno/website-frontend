@@ -1,12 +1,10 @@
 :root {
-    --fontName: "IRANSansWeb", sans-serif;
     --darkColor: #1c2237;
   }
 
 .banner {
     /* background-image:-moz-linear-gradient('Top to Buttom', '#1c2237', '#fff'); */
-    background-color: #1c2237;
-    color: #fff;
+    background-color: #fff;
     padding: 80px 0;
 }
 
@@ -21,8 +19,10 @@
 }
 
 .banner-title {
-    font-family: "IRANSansWeb";
+    font-family: var(--fontName);
     font-size: 3rem;
+    font-weight: bolder;
+    color: var(--darkColor);
 }
 
 .banner-hLine-container {
@@ -91,7 +91,7 @@ flex-basis: 50%;
 
 .team-text-wrapper {
 max-width: 300px;
-padding-top: 70px;
+padding-top: 20px;
 padding-bottom: 60px;
 margin-left: auto;
 margin-right: auto;
