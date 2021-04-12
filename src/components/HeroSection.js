@@ -13,7 +13,9 @@ function HeroSection({
   buttonLabel,
   img,
   alt,
-  imgStart
+  imgStart,
+  customize,
+  customDes
 }) {
   return (
     <>
@@ -41,7 +43,8 @@ function HeroSection({
                       : 'home__hero-subtitle dark'
                   }
                 >
-                  {description}
+                  {/* {description} */}
+                  {customize === true ?  customDes : description}
                 </p>
                 {/* <Link to='/sign-up'>
                   <Button buttonSize='btn--wide' buttonColor='blue'>

@@ -1,12 +1,13 @@
 export const homeObjOne = {
-    lightBg: true,
-    lightText: false,
-    lightTextDes: false,
-    topLine: 'پلتفرمی راحت برای فروش راحت تر مرچ',
-    headline: 'طرح های خود را با محصولات مخصوص خودتان به طرفدارانتان هدیه دهید',
-    description: 'به راحتی با دنبال کننده های خود ارتباط برقرار کنید و مرچ های مخصوص با طرح های خود را به آن ها عرضه کنید',
-    buttonLabel: 'شروع',
-    imgStart: '',
-    img: 'images/yourLogo.png',
-    alt: "Credit Card"
-}
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'آشنایی با ما',
+    headline: 'ما معتقدیم که تیمی متعهد و پر انرژی از متخصصین هر ناممکنی را ممکن می‌سازد',
+    description:
+      'در تشکیل تیم،‌ سعی داشته ایم جوی صمیمی از جوانان با انرژی و تجربه را گرد هم آوریم تا بهترین کیفیت خدمات را به مشتریان خود ارائّه کنیم. در ادامه اعضای کلیدی تیم ما را می‌توانید مشاهده کنید.',
+    buttonLabel: 'اطلاعات بیشتر',
+    imgStart: 'start',
+    img: 'images/temp/team-work.png',
+    alt: 'Credit Card'
+  };

@@ -16,8 +16,8 @@ function App() {
     <Router>
       <Navbar />
       <Home id="home"/>
-      <Services id="services"/>
       <Products id="products"/>
+      <Services id="services"/>
       {/* <SignUp id="signup"/> */}
       <Team />
       <Footer />

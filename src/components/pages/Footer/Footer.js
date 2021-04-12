@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.css';
 import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
+import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
+
 import {
   FaTelegramPlane,
   FaInstagram,
@@ -15,6 +17,10 @@ import axios from 'axios'
 function Footer() {
   const installClicked = () => {
     axios.get("http://127.0.0.1:8000/admin/")
+  };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
   };
 
   return (
@@ -63,12 +69,11 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
-              <MdFingerprint className='navbar-icon' />
+            <LinkScroll to='/' className='social-logo' onClick={scrollToTop}>
               <b>DEZIGNO</b> 
-            </Link>
+            </LinkScroll>
           </div>
-          <small className='website-rights'>تمامی حقوق مادی و معنوی متعلق به شرکت توسعه محصول نگار شرق‌ (فروشگاه آنلاین دزیگنو) می‌باشد</small>
+          <small className='website-rights'>تمامی حقوق مادی و معنوی متعلق به شرکت توسعه محصول نگار شرق‌ (با مسئولیت محدود) - فروشگاه آنلاین دزیگنو - می‌باشد</small>
           <div className='social-icons'>
             <a
               className='social-icon-link'
