@@ -21,6 +21,6 @@ export const homeObjTwo = {
       'فروش مرچ در تمام دنیا یکی از پرسود ترین راه های درآمد هر اینفلوئنسر و تولید کننده محتواست (اگر اصلی ترین نباشد!)، پس از آن غافل نشوید.',
     buttonLabel: 'اطلاعات بیشتر',
     imgStart: 'start',
-    img: 'images/chart.png',
+    img: 'images/home/home2.png',
     alt: 'Credit Card'
   };

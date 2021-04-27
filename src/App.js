@@ -6,20 +6,35 @@ import Services from './components/pages/Services/Services';
 import Products from './components/pages/Products/Products';
 import Team from './components/pages/Team/Team'
 import SignUp from './components/pages/SignUp/SignUp';
+import Blog from './components/pages/blog/Blog'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/pages/Footer/Footer';
+import Index from './components/Index';
 
+
+// function App() {
+//   return (
+//     <Router>
+//       <Navbar />
+//       <Home id="home"/>
+//       <Products id="products"/>
+//       <Services id="services"/>
+//       {/* <SignUp id="signup"/> */}
+//       <Team />
+//       <Footer />
+//     </Router>
+//   );
+// }
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Home id="home"/>
-      <Products id="products"/>
-      <Services id="services"/>
-      {/* <SignUp id="signup"/> */}
-      <Team />
+        <Switch>
+          <Route path="/" exact component={ Index } />
+          <Route path="/blog" component={ Blog } />
+        </Switch>
       <Footer />
     </Router>
   );

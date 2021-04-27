@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link as routerLink} from 'react-router-dom'
+import { Link as RoutLink} from 'react-router-dom'
 import { Button } from './Button'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
@@ -14,7 +14,10 @@ function Navbar() {
     const [button, setButton] = useState(true);
   
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+
+    const closeMobileMenu = () => {
+      setClick(false);
+    }
   
     const showButton = () => {
       if (window.innerWidth <= 960) {
@@ -56,7 +59,7 @@ function Navbar() {
                 {click ? <FaTimes /> : <FaBars />}
               </div>
               
-              <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <ul className={click ? 'nav-menu active' : 'nav-menu deactive'}>
                 <li className='nav-item'>
                   <Link 
                     to='home-container' 
@@ -73,20 +76,6 @@ function Navbar() {
                 </li>
                 <li className='nav-item'>                
                   <Link
-                    to='services-container'
-                    className='nav-links'
-                    onClick={closeMobileMenu}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={800}
-                    activeClass="active"
-                  >
-                    سرویس ها
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link
                     to='products-container'
                     className='nav-links'
                     onClick={closeMobileMenu}
@@ -97,6 +86,20 @@ function Navbar() {
                     activeClass="active"
                   >
                     محصولات
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link
+                    to='services-container'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={800}
+                    activeClass="active"
+                  >
+                    سرویس ها
                   </Link>
                 </li>
                 <li className='nav-item'>
@@ -112,6 +115,15 @@ function Navbar() {
                   >
                     تیم ما
                   </Link>
+                </li>
+                <li className='nav-item'>
+                  <RoutLink
+                    to='/blog'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                  >
+                    بلاگ
+                  </RoutLink>
                 </li>
                 {/* <li className='nav-btn'>
                   {button ? (

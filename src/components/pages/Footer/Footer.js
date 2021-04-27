@@ -25,13 +25,10 @@ function Footer() {
 
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
+      {/* <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           برای کسب اطلاعات بیشتر می‌توانید در خبرنامه ما مشترک بشوید
         </p>
-        {/* <p className='footer-subscription-text'>
-          هر زمان که بخواهید می‌توانید مشترک دزیگنو باشید.
-        </p> */}
         <div className='input-areas'>
           <form>
             <input
@@ -43,7 +40,7 @@ function Footer() {
             <Button buttonStyle='btn--outline'>اشتراک</Button>
           </form>
         </div>
-      </section>
+      </section> */}
 
       <section className="footer-contactus">
         <p className="footer-contactus-heading">

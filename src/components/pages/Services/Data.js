@@ -8,7 +8,7 @@ export const homeObjOne = {
       'به آسانی محصولات خود را در سایت تعریف کنید، هر گونه تغییری را با چند کلیک اعمال کنید و فروشگاه خود، حساب ها، تخفیف ها و کمپین ها را به آسانی مدیریت کنید.',
     buttonLabel: 'اطلاعات بیشتر',
     imgStart: '',
-    img: 'images/chart.png',
+    img: 'images/home/service1.png',
     alt: 'Credit Card'
   };
   
@@ -21,7 +21,7 @@ export const homeObjOne = {
     description: "sdfsdfsdfsdfsdf",
     buttonLabel: 'Learn More',
     imgStart: 'start',
-    img: 'images/temp/thinking-boy.png',
+    img: 'images/home/service2.3.png',
     alt: 'Vault',
     customize: true,
     customDes: <ul><li>رفع تمام نگرانی ها و مشکلات مربوط به فروش، حمل و نقل و مسائل قانونی</li><li>امکان تغییر و تعریف طرح های جدید و بسیار به سادگی برای مناسبت های هالووین، کریسمس و غیره بدون نگرانی از فروش کم طرح ها</li><li>عدم نیاز به هیچگونه فضا و نیروی فیزیکی برای انبار، فروشگاه</li><li>راه اندازی ساده فروشگاه و تعریف محصولات در چند دقیقه، بدون نیاز به دانشی از صنعت چاپ، محصولات و غیره</li></ul>
@@ -37,7 +37,7 @@ export const homeObjOne = {
       "ابزار آنلاین اجازه طراحی آسان محصولات را به شما می‌دهد، همچنین در لحظه با نمایش یک خروجی از طرح نهایی، دیدی به شما میدهد که محصول شما به چه شکلی خواهد شد. تیم طراحی ما نیز آماده ارائه هرگونه خدمات مشاوره ای و کمک به شماست.",
     buttonLabel: 'به ما بپیوندید',
     imgStart: '',
-    img: 'images/design.svg',
+    img: 'images/home/service3.png',
     alt: 'Vault'
   };
   

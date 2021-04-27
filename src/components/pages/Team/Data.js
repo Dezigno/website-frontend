@@ -8,6 +8,6 @@ export const homeObjOne = {
       'در تشکیل تیم،‌ سعی داشته ایم جوی صمیمی از جوانان با انرژی و تجربه را گرد هم آوریم تا بهترین کیفیت خدمات را به مشتریان خود ارائّه کنیم. در ادامه اعضای کلیدی تیم ما را می‌توانید مشاهده کنید.',
     buttonLabel: 'اطلاعات بیشتر',
     imgStart: 'start',
-    img: 'images/temp/team-work.png',
+    img: 'images/home/team1.png',
     alt: 'Credit Card'
   };

@@ -100,6 +100,14 @@
     z-index: 1;
   }
 
+  .nav-menu.deactive {
+    /* left: 0;
+    visibility: hidden;
+    z-index: -100000000; */
+    display: none;
+    /* transition: all 0.5s ease; */
+  }
+
   .nav-links {
     text-align: center;
     padding: 2rem;
