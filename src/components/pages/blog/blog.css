@@ -1,0 +1,145 @@
+.blog-header{
+    /* width: 90%; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 120px 0;
+    background-color: #1c2237;
+    color: #fff;
+}
+
+
+.blogs-container{
+    background-color: #f8f9fa;
+}
+
+
+.blog-contents{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.post-box{
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+.slide{
+    width: 40%;
+}
+
+
+.post-img-container{
+    width: 90%;
+    /* max-height: 80px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.post-img-link{
+    justify-content: center;
+    max-width: 60px;
+}
+
+.post-title-container{
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.post-title{
+    font-size: 14px;
+    margin: 0 auto;
+    color: #1c2237;
+}
+
+.post-link{
+    color: #1c2237;
+    text-decoration: none;
+}
+
+.post-link:hover{
+    color: #6e6e6e;
+}
+
+
+.post-body-candidate-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-bottom: 25px;
+}
+
+.post-body-candidate{
+    width: 88%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #6e6e6e;
+}
+
+.blog-details{
+    display: flex;
+    flex-wrap: wrap;
+    color: #c5c0c0;
+    font-size: 13px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+
+}
+
+.blog-author{
+    display: flex;
+    margin-left: 7px;
+    margin-right: 2px;
+    
+}
+
+.blog-date-category{
+    display: flex;
+    flex-wrap: wrap;
+    ;
+    /* flex-direction: row-reverse; */
+}
+
+.blog-date{
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+}
+
+.blog-date > h3 {
+    margin-right: 5px;
+    margin-left: 7px;
+}
+
+.blog-category{
+    display: flex;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.blog-category > h3{
+    margin-right: 5px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .blog-contents{
+        width: 90%;
+    }
+
+    .slide{
+        display: none;
+    }
+}
