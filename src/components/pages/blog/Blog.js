@@ -14,12 +14,13 @@ function Blog() {
     const [items, setItems] = useState([])
 
     const fetchData = async () => {
-        const response = await fetch("https://jsonplaceholder.typicode.com/photos");
+        const response = await fetch("http://dezigno.ir:8765/blog");
         const items = await response.json();
 
         console.log(items);
         // setItems(items.filter(item => (item.id < 10)));
         setItems(items);
+        console.log(items)
     }
 
     return (
@@ -76,7 +77,7 @@ function Blog() {
                                 <div className="post-body-candidate-container">
                                     <div className="post-body-candidate">
                                         <p>
-                                        {item.body}
+                                        {item.entry_text }
                                         </p>
                                     </div>
                                 </div>
