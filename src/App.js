@@ -30,7 +30,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={ Index } />
           <Route path="/blog" exact component={ Blog } />
-          <Route path="/blog/:id" component={ BlogPage }/>
+          <Route path="/blog/:slug" component={ BlogPage }/>
         </Switch>
       <Footer />
     </Router>

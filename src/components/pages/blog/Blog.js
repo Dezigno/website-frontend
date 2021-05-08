@@ -18,7 +18,8 @@ function Blog() {
         const items = await response.json();
 
         console.log(items);
-        setItems(items.filter(item => (item.id < 10)));
+        // setItems(items.filter(item => (item.id < 10)));
+        setItems(items);
     }
 
     return (
@@ -36,7 +37,7 @@ function Blog() {
                             <div className="post-box" key={item.id}>
                                 <div className="post-title-container">
                                     <div className="post-title">
-                                        <Link className="post-link" to={`/blog/${item.id}`}>
+                                        <Link className="post-link" to={`/blog/${item.slug}`}>
                                             <h1 className="post-title-text">
                                                 {item.title}
                                             </h1>
@@ -46,29 +47,36 @@ function Blog() {
                                 <div className="blog-details">
                                     <div className="blog-author">
                                         <FaUserCircle style={{fontSize: "18px"}} />
-                                        <h4 style={{marginRight: "4px"}}>نوید قاسمی</h4>
+                                        <h4 style={{marginRight: "4px"}}>{item.author}</h4>
                                     </div>
                                     <div className="blog-date-category">
                                         <div className="blog-date">
                                             <MdDateRange style={{fontSize: "18px"}}/>
-                                            <h3>13 apr 2020</h3>
+                                            <h3>{item.datetime}</h3>
                                         </div>
                                         <div className="blog-category">
                                             <BsReverseLayoutTextSidebarReverse style={{fontSize: "18px"}}/>
-                                            <h3>کتوری بلاگ</h3>
+                                            {
+                                                item.category.map(cat => (
+                                                    <Link className="category-link">
+                                                        <h3>
+                                                            {cat}
+                                                        </h3>
+                                                    </Link>
+                                                ))
+                                            }
                                         </div>
                                     </div>
                                 </div>
                                 <div className="post-img-container">
-                                    <Link className="post-img-link" to={`/blog/${item.id}`}>
-                                        <img src={item.url} alt={`post ${item.id} entry img`} style={{maxHeight: "400px"}}/>
+                                    <Link className="post-img-link" to={`/blog/${item.slug}`}>
+                                        <img src={item.entry_img} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
                                     </Link>
                                 </div>
                                 <div className="post-body-candidate-container">
                                     <div className="post-body-candidate">
                                         <p>
-                                        {/* DEBUG */}
-                                        پروتکل SSL/TLS چیست؟ پروتکل TLS (Transport Layer Security) تضمین‌کننده‌ی برقراری ارتباطی امن و رمزنگاری شده میان کلاینت و سرور در یک شبکه‌ی کامپیوتری است. این پروتکل رمزنگاری در ارتباطات مختلفی مانند ایمیل‌ها – پیام‌رسان‌ها و … مورد استفاده قرار می‌گیرد. یکی از کاربردهای عمده‌ی آن در ارتباط وب میان بازدیدکننده
+                                        {item.body}
                                         </p>
                                     </div>
                                 </div>
