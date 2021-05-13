@@ -4,17 +4,24 @@ import './blog.css'
 import { FaUserCircle } from 'react-icons/fa'
 import { MdDateRange } from 'react-icons/md'
 import { BsReverseLayoutTextSidebarReverse } from 'react-icons/bs'
-
+import { useSelector, useDispatch } from 'react-redux'
+import { scrollAction, routeAction } from '../../../actions'
 
 function Blog() {
+
+    const scrollState = useSelector(state => state.scroll)
+    const dispatch = useDispatch()
+
     useEffect(() => {
         fetchData();
+        dispatch(routeAction())
+        console.log(scrollState)
     }, []);
 
     const [items, setItems] = useState([])
 
     const fetchData = async () => {
-        const response = await fetch("https://dezigno.ir:8765/blog");
+        const response = await fetch("http://dezigno.ir:8765/blog/");
         const items = await response.json();
 
         console.log(items);
