@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3b6dc96.chunk.css",
+    "main.js": "/static/js/main.38a16ba9.chunk.js",
+    "main.js.map": "/static/js/main.38a16ba9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4cc7cf47.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4cc7cf47.js.map",
+    "static/js/2.042deb73.chunk.js": "/static/js/2.042deb73.chunk.js",
+    "static/js/2.042deb73.chunk.js.map": "/static/js/2.042deb73.chunk.js.map",
+    "static/js/3.441e8800.chunk.js": "/static/js/3.441e8800.chunk.js",
+    "static/js/3.441e8800.chunk.js.map": "/static/js/3.441e8800.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c3b6dc96.chunk.css.map": "/static/css/main.c3b6dc96.chunk.css.map",
+    "static/js/2.042deb73.chunk.js.LICENSE.txt": "/static/js/2.042deb73.chunk.js.LICENSE.txt",
+    "static/media/dezigno_white_logo.257015ce.png": "/static/media/dezigno_white_logo.257015ce.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cc7cf47.js",
+    "static/js/2.042deb73.chunk.js",
+    "static/css/main.c3b6dc96.chunk.css",
+    "static/js/main.38a16ba9.chunk.js"
+  ]
+}
