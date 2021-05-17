@@ -21,7 +21,7 @@ function Blog() {
     const [items, setItems] = useState([])
 
     const fetchData = async () => {
-        const response = await fetch("http://dezigno.ir:8765/blog/");
+        const response = await fetch("http://api.dezigno.ir/blog/");
         const items = await response.json();
 
         console.log(items);
