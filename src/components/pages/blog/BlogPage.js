@@ -4,6 +4,7 @@ import './blog.css'
 import { FaUserCircle } from 'react-icons/fa'
 import { MdDateRange } from 'react-icons/md'
 import { BsReverseLayoutTextSidebarReverse } from 'react-icons/bs'
+import pars from 'html-react-parser';
 
 
 function Blog({ match }) {
@@ -14,11 +15,11 @@ function Blog({ match }) {
     const [item, setItem] = useState([])
 
     const fetchData = async () => {
-        const response = await fetch(`https://api.dezigno.ir:8765/blog/${match.params.id}-${match.params.slug}`);
+        console.log("hoogh", match.params)
+        const response = await fetch(`https://api.dezigno.ir/blog/${match.params.slug}`);
         const item = await response.json();
 
         console.log(item);
-        // setItems(items.filter(item => (item.id < 10)));
         setItem(item[0]);
     }
 
@@ -70,14 +71,12 @@ function Blog({ match }) {
                                 </div>
                                 <div className="post-img-container">
                                     <Link className="post-img-link" to={`/blog/${item.slug}`}>
-                                        <img src={item.entry_img} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
+                                        <img src={`https://api.dezigno.ir${item.entry_img}`} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
                                     </Link>
                                 </div>
                                 <div className="post-body-candidate-container">
                                     <div className="post-body-candidate">
-                                        <p>
-                                        {item.body }
-                                        </p>
+                                        {pars(item.body)}
                                     </div>
                                 </div>
                             </div>

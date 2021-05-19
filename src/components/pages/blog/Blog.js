@@ -5,7 +5,8 @@ import { FaUserCircle } from 'react-icons/fa'
 import { MdDateRange } from 'react-icons/md'
 import { BsReverseLayoutTextSidebarReverse } from 'react-icons/bs'
 import { useSelector, useDispatch } from 'react-redux'
-import { scrollAction, routeAction } from '../../../actions'
+import { scrollAction, routeAction } from '../../../actions';
+import pars from 'html-react-parser';
 
 function Blog() {
 
@@ -78,14 +79,12 @@ function Blog() {
                                 </div>
                                 <div className="post-img-container">
                                     <Link className="post-img-link" to={`/blog/${item.slug}`}>
-                                        <img src={`https://api.dezigno.ir/${item.entry_img}`} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
+                                        <img src={`https://api.dezigno.ir${item.entry_img}`} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
                                     </Link>
                                 </div>
                                 <div className="post-body-candidate-container">
-                                    <div className="post-body-candidate">
-                                        <p>
-                                        {item.entry_text}
-                                        </p>
+                                    <div className="post-body-candidate" >
+                                        {pars(item.entry_text)}
                                     </div>
                                 </div>
                             </div>
