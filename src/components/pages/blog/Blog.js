@@ -78,13 +78,13 @@ function Blog() {
                                 </div>
                                 <div className="post-img-container">
                                     <Link className="post-img-link" to={`/blog/${item.slug}`}>
-                                        <img src={item.entry_img} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
+                                        <img src={`https://api.dezigno.ir/${item.entry_img}`} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
                                     </Link>
                                 </div>
                                 <div className="post-body-candidate-container">
                                     <div className="post-body-candidate">
                                         <p>
-                                        {item.entry_text }
+                                        {item.entry_text}
                                         </p>
                                     </div>
                                 </div>

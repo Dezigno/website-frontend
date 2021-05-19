@@ -14,7 +14,7 @@ function Blog({ match }) {
     const [item, setItem] = useState([])
 
     const fetchData = async () => {
-        const response = await fetch(`http://dezigno.ir:8765/blog/${match.params.slug}`);
+        const response = await fetch(`https://api.dezigno.ir:8765/blog/${match.params.id}-${match.params.slug}`);
         const item = await response.json();
 
         console.log(item);
