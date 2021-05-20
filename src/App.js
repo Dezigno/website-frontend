@@ -16,7 +16,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={ Index } />
           <Route path="/blog" exact component={ Blog } />
-          <Route path="/blog/:slug" component={ BlogPage }/>
+          <Route path="/blog/post/:slug" component={ BlogPage }/>
         </Switch>
       <Footer />
     </Router>
