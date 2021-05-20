@@ -46,7 +46,7 @@ function Blog() {
                             <div className="post-box" key={item.id}>
                                 <div className="post-title-container">
                                     <div className="post-title">
-                                        <Link className="post-link" to={`/blog/${item.slug}`}>
+                                        <Link className="post-link" to={`/blog/post/${item.id}-${item.slug}`}>
                                             <h1 className="post-title-text">
                                                 {item.title}
                                             </h1>
@@ -78,7 +78,7 @@ function Blog() {
                                     </div>
                                 </div>
                                 <div className="post-img-container">
-                                    <Link className="post-img-link" to={`/blog/${item.slug}`}>
+                                    <Link className="post-img-link" to={`/blog/post/${item.id}-${item.slug}`}>
                                         <img src={`https://api.dezigno.ir${item.entry_img}`} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
                                     </Link>
                                 </div>

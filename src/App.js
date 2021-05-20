@@ -9,20 +9,6 @@ import Footer from './components/pages/Footer/Footer';
 import Index from './components/Index';
 
 
-// function App() {
-//   return (
-//     <Router>
-//       <Navbar />
-//       <Home id="home"/>
-//       <Products id="products"/>
-//       <Services id="services"/>
-//       {/* <SignUp id="signup"/> */}
-//       <Team />
-//       <Footer />
-//     </Router>
-//   );
-// }
-
 function App() {
   return (
     <Router>
@@ -36,21 +22,5 @@ function App() {
     </Router>
   );
 }
-
-// function App() {
-//   return (
-//     <Router>
-//       <Navbar />
-//       <Switch>
-//         <Route path='/' exact component={ Home } id="home"/>
-//         <Route path='/services' component={ Services } id="services"/>
-//         <Route path='/products' component={ Products } id="products"/>
-//         <Route path='/sign-up' component={ SignUp } id="signup"/>
-//         <Route path='/team' component={ Team } id="team"/>
-//       </Switch>
-//       <Footer />
-//     </Router>
-//   );
-// }
 
 export default App;
