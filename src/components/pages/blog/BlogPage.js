@@ -16,11 +16,11 @@ function Blog({ match }) {
 
     const fetchData = async () => {
         console.log("hoogh", match.params)
-        const response = await fetch(`https://api.dezigno.ir/blog/post/${match.params.id}-${match.params.slug}`);
+        const response = await fetch(`https://api.dezigno.ir/blog/post/${match.params.slug}`);
         const item = await response.json();
 
         console.log(item);
-        setItem(item[0]);
+        setItem(item);
     }
 
     return (
@@ -33,55 +33,50 @@ function Blog({ match }) {
                     <h1>blog</h1>
                 </div>
                 <div className="contents-container">
-                    {
-                        item.map(item => (
-                            <div className="post-box" key={item.id}>
-                                <div className="post-title-container">
-                                    <div className="post-title">
-                                        <Link className="post-link" to={`/blog/${item.slug}`}>
-                                            <h1 className="post-title-text">
-                                                {item.title}
-                                            </h1>
-                                        </Link>
-                                    </div>
+            
+                    <div className="post-box" key={item.id}>
+                        <div className="post-title-container">
+                            <div className="post-title">
+                                <h1 className="post-title-text">
+                                    {item.title}
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="blog-details">
+                            <div className="blog-author">
+                                <FaUserCircle style={{fontSize: "18px"}} />
+                                <h4 style={{marginRight: "4px"}}>{item.author}</h4>
+                            </div>
+                            <div className="blog-date-category">
+                                <div className="blog-date">
+                                    <MdDateRange style={{fontSize: "18px"}}/>
+                                    <h3>{item.datetime}</h3>
                                 </div>
-                                <div className="blog-details">
-                                    <div className="blog-author">
-                                        <FaUserCircle style={{fontSize: "18px"}} />
-                                        <h4 style={{marginRight: "4px"}}>{item.author}</h4>
-                                    </div>
-                                    <div className="blog-date-category">
-                                        <div className="blog-date">
-                                            <MdDateRange style={{fontSize: "18px"}}/>
-                                            <h3>{item.datetime}</h3>
-                                        </div>
-                                        <div className="blog-category">
-                                            <BsReverseLayoutTextSidebarReverse style={{fontSize: "18px"}}/>
-                                            {
-                                                item.category.map(cat => (
-                                                    <Link className="category-link">
-                                                        <h3>
-                                                            {cat}
-                                                        </h3>
-                                                    </Link>
-                                                ))
-                                            }
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="post-img-container">
-                                    <Link className="post-img-link" to={`/blog/${item.slug}`}>
-                                        <img src={`https://api.dezigno.ir${item.entry_img}`} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
-                                    </Link>
-                                </div>
-                                <div className="post-body-candidate-container">
-                                    <div className="post-body-candidate">
-                                        {pars(item.body)}
-                                    </div>
+                                <div className="blog-category">
+                                    <BsReverseLayoutTextSidebarReverse style={{fontSize: "18px"}}/>
+                                    {
+                                        item.category.map(cat => (
+                                            <Link className="category-link">
+                                                <h3>
+                                                    {cat}
+                                                </h3>
+                                            </Link>
+                                        ))
+                                    }
                                 </div>
                             </div>
-                        ))
-                    }
+                        </div>
+                        <div className="post-img-container">
+                            <Link className="post-img-link" to={`/blog/${item.slug}`}>
+                                <img src={`https://api.dezigno.ir${item.entry_img}`} alt={`post ${item.slug} entry img`} style={{maxHeight: "400px"}}/>
+                            </Link>
+                        </div>
+                        <div className="post-body-candidate-container">
+                            <div className="post-body-candidate">
+                                {pars(item.body)}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

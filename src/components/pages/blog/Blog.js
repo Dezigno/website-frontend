@@ -69,7 +69,7 @@ function Blog() {
                                                 item.category.map(cat => (
                                                     <Link className="category-link">
                                                         <h3>
-                                                            {cat}
+                                                            {cat  + "  "}
                                                         </h3>
                                                     </Link>
                                                 ))
