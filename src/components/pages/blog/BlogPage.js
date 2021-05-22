@@ -15,12 +15,12 @@ function Blog({ match }) {
     const [item, setItem] = useState([])
 
     const fetchData = async () => {
-        console.log("hoogh", match.params)
         const response = await fetch(`https://api.dezigno.ir/blog/post/${match.params.slug}`);
-        const item = await response.json();
-
-        console.log(item);
-        setItem(item);
+        const data = await response.json();
+        console.log("sdfsdf", data)
+        if (data !== undefined) {
+            setItem(data);
+        }
     }
 
     return (
@@ -54,15 +54,16 @@ function Blog({ match }) {
                                 </div>
                                 <div className="blog-category">
                                     <BsReverseLayoutTextSidebarReverse style={{fontSize: "18px"}}/>
-                                    {
+                                    {/* {
                                         item.category.map(cat => (
-                                            <Link className="category-link">
+                                            <Link className="category-link" to={`https://api.dezigno.ir/blog/category/${cat}`}> 
                                                 <h3>
                                                     {cat}
                                                 </h3>
                                             </Link>
                                         ))
-                                    }
+                                    } */}
+                                    <h5>boz</h5>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +74,8 @@ function Blog({ match }) {
                         </div>
                         <div className="post-body-candidate-container">
                             <div className="post-body-candidate">
-                                {pars(item.body)}
+                                {/* {console.log("fuckkkk", item.body)} */}
+                                {item.body !== undefined  ? pars(item.body) : ''}
                             </div>
                         </div>
                     </div>

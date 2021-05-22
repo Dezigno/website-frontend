@@ -67,7 +67,7 @@ function Blog() {
                                             <BsReverseLayoutTextSidebarReverse style={{fontSize: "18px"}}/>
                                             {
                                                 item.category.map(cat => (
-                                                    <Link className="category-link">
+                                                    <Link className="category-link" to={`https://api.dezigno.ir/blog/category/${cat}`}>
                                                         <h3>
                                                             {cat  + "  "}
                                                         </h3>
