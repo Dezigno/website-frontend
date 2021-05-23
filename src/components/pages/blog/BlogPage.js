@@ -54,16 +54,16 @@ function Blog({ match }) {
                                 </div>
                                 <div className="blog-category">
                                     <BsReverseLayoutTextSidebarReverse style={{fontSize: "18px"}}/>
-                                    {/* {
-                                        item.category.map(cat => (
-                                            <Link className="category-link" to={`https://api.dezigno.ir/blog/category/${cat}`}> 
-                                                <h3>
-                                                    {cat}
-                                                </h3>
-                                            </Link>
-                                        ))
-                                    } */}
-                                    <h5>boz</h5>
+                                    {
+                                        item.category !== undefined ?
+                                            (item.category.map(cat => (
+                                                <Link className="category-link" to={`https://api.dezigno.ir/blog/category/${cat}`}> 
+                                                    <h3>
+                                                        {cat}
+                                                    </h3>
+                                                </Link>
+                                            ))) : <p></p>
+                                    }
                                 </div>
                             </div>
                         </div>
