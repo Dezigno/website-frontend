@@ -6,7 +6,6 @@ import { MdDateRange } from 'react-icons/md'
 import { BsReverseLayoutTextSidebarReverse } from 'react-icons/bs'
 import pars from 'html-react-parser';
 
-
 function Blog({ match }) {
     useEffect(() => {
         fetchData();

@@ -86,59 +86,6 @@ function Navbar() {
                   )
                   }
                 </li>
-                <li className='nav-item'> 
-                  {location.pathname === '/blog' ? (
-                    <RoutLink
-                      to='/'
-                      className='nav-links'
-                      onClick={closeMobileMenu}
-                    >
-                      محصولات
-                    </RoutLink>
-                  ) : (
-                    <Link
-                      to='products-container'
-                      className='nav-links'
-                      onClick={closeMobileMenu}
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={800}
-                      activeClass="active"
-                    >
-                      محصولات
-                    </Link>
-                  )
-                  }            
-                </li>
-                <li className='nav-item'>
-                  <Link
-                    to='services-container'
-                    className='nav-links'
-                    onClick={closeMobileMenu}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={800}
-                    activeClass="active"
-                  >
-                    سرویس ها
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link
-                    to='team-container'
-                    className='nav-links'
-                    onClick={closeMobileMenu}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={800}
-                    activeClass="active"
-                  >
-                    تیم ما
-                  </Link>
-                </li>
                 <li className='nav-item'>
                   <RoutLink
                     to='/blog'
