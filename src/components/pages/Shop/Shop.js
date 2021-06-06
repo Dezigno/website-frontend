@@ -10,8 +10,11 @@ const useStyles = makeStyles((theme) => {
   return (
     {
       banner: {
-        width: "100%",
-        backgroundImage: ''
+        // width: "100%",
+        height: "600px",
+        backgroundImage: 'url("/test/bg-banner.jpeg")',
+        backgroundPosition: "center top",
+        backgroundSize: 'cover'
       }
     }
   );

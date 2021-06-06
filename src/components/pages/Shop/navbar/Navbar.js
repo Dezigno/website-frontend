@@ -20,7 +20,10 @@ const useStyles = makeStyles((theme) => {
             flexGrow: 1
         }, 
         tabIcon: {
-            display: 'none'
+            [theme.breakpoints.down('md')]: {
+                display: 'none'
+            }, 
+            fontSize: 'small'
         }
     }
 })
@@ -56,7 +59,7 @@ function Navbar() {
                                 onClick={closeMobileMenu}
                             >
                                 <p className="navbar-link-text">پوشاک</p>
-                                <ArrowDropDownIcon className={click ? "navbar-link-icon" : `navbar-link-icon ${classes.tabIcon}`}  style={{fontSize: 'small'}}/>
+                                <ArrowDropDownIcon className={`navbar-link-icon ${classes.tabIcon}`}/>
                             </Link>
                         </li>
                         <li className="nabar-item">
@@ -66,7 +69,7 @@ function Navbar() {
                                 onClick={closeMobileMenu}
                             >
                                 <p className="navbar-link-text">لوازم خانه</p>
-                                <ArrowDropDownIcon className={click ? "navbar-link-icon" : `navbar-link-icon ${classes.tabIcon}`}  style={{fontSize: 'small'}}/>
+                                <ArrowDropDownIcon className={`navbar-link-icon ${classes.tabIcon}`}/>
                             </Link>
                         </li>
                         <li className="nabar-item">
@@ -76,7 +79,7 @@ function Navbar() {
                                 onClick={closeMobileMenu}
                             >
                                 <p className="navbar-link-text">لوازم تزئینی</p>
-                                <ArrowDropDownIcon className={click ? "navbar-link-icon" :`navbar-link-icon ${classes.tabIcon}`}  style={{fontSize: 'small'}}/>
+                                <ArrowDropDownIcon className={`navbar-link-icon ${classes.tabIcon}`}/>
                             </Link>
                         </li>
                     </ul>
