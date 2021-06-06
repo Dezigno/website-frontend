@@ -7,19 +7,21 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/pages/Footer/Footer';
 import Index from './components/Index';
+import Shop from './components/pages/Shop/Shop';
 
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-        <Switch>
-          <Route path="/" exact component={ Index } />
-          <Route path="/blog" exact component={ Blog } />
-          <Route path="/blog/post/:slug" component={ BlogPage }/>
-        </Switch>
-      <Footer />
-    </Router>
+    <div>
+        <Router>
+          <Switch>
+            <Route path="/" exact component={ Index } />
+            <Route path="/blog" exact component={ Blog } />
+            <Route path="/blog/post/:slug" component={ BlogPage }/>
+            <Route path="/shop" component={ Shop }  />
+          </Switch>
+      </Router>
+    </div>
   );
 }
 

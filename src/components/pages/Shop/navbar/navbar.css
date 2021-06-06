@@ -1,0 +1,172 @@
+.navbar-shop {
+  background-color: #fff;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container-shop {
+  display: flex;
+  justify-content: space-between;
+  /* height: inherit; */
+}
+
+.container-shop {
+  z-index: 1;
+  width: 100%;
+  /* max-width: 1300px; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  /* padding-left: 25px; */
+}
+
+.cart-icon {
+  margin-left: 12px;
+}
+
+.shop-logo {
+  flex-grow: -1;
+}
+
+.navbar-icon-shop {
+  margin-right: 0.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
+  flex-grow: -1;
+}
+
+.navbar-item {
+  text-decoration: none;
+}
+
+
+.navbar-links {
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.navbar-link-text{
+  margin-left: 10px;
+}
+
+.navbar-link-icon {
+  margin-right: 15px;
+}
+
+.menu-icon-shop{
+  display: none;
+}
+
+.v-divider {
+  border-left: 1px solid #000;
+  color: #000;
+  /* width: 1px; */
+  height: 12px;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 960px) {
+  .container-shop {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-menu.active {
+    background: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+
+  .navbar-menu.deactive{
+    display: none;
+  }
+
+  .navbar-link-icon {
+    display: none;
+  }
+
+  .navbar-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar-links:hover {
+    color: #f00946;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+
+  .navbar-item {
+    width: 100%;
+  }
+
+  .navbar-item:hover {
+    border: none;
+  }
+
+  .shop-logo {
+    max-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-icon-shop {
+    display: block;
+    margin-right: 20px;
+    /* margin-right: 22px; */
+  }
+
+  .menu-icon-close{
+    padding-top: 8px;
+  }
+
+  .menu-icon-open {
+    padding-top: 11px;
+  }
+
+
+
+  .v-divider {
+    display: none;
+    margin: 0;
+    border: 0;
+  }
+  
+
+}
