@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  position: sticky;
+  position: fixed; 
+  width: 100%;
   top: 0;
   z-index: 999;
 }
@@ -19,7 +20,6 @@
 .container-shop {
   z-index: 1;
   width: 100%;
-  /* max-width: 1300px; */
   margin-right: auto;
   margin-left: auto;
   padding-right: 10px;
@@ -32,6 +32,7 @@
 
 .shop-logo {
   flex-grow: -1;
+  margin-right: 10px;
 }
 
 .navbar-icon-shop {
@@ -168,5 +169,8 @@
     border: 0;
   }
   
+  .cart-icon {
+    margin-right: 8px;
+  }
 
 }
