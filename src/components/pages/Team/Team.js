@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="team-container">
           <HeroSection {...homeObjOne}/>  
-          <div className="banner">
+          <div className="home-banner">
               <div className="container">
                 <div className="banner-header">
                     <h1 className="banner-title">
