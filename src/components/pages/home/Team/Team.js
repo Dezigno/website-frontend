@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroSection from '../../HeroSection'
+import HeroSection from '../HeroSection'
 import { homeObjOne } from './Data'
 
-import '../../assets/CSS/Team.css'
+import './Team.css'
 
 function Home() {
     return (

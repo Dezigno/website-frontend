@@ -6,7 +6,7 @@ import { GiCrystalize } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
-import './assets/CSS/Pricing.css'; 
+import './Pricing.css'; 
 
 function Pricing() {
   return (

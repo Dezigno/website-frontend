@@ -8,8 +8,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { scrollAction, routeAction } from '../../../actions';
 import pars from 'html-react-parser';
 import { intlFormat } from 'date-fns-jalali'
-import Footer from '../Footer/Footer';
-import Navbar from '../../Navbar';
+import Footer from '../home/Footer/Footer';
+import Navbar from '../home/Navbar';
 
 function Blog() {
     const scrollState = useSelector(state => state.scroll)

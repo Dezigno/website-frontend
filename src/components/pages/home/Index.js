@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from './pages/HomePage/Home'
-import Services from './pages/Services/Services'
-import Signup from './pages/SignUp/SignUp'
-import Products from './pages/Products/Products'
-import Team from './pages/Team/Team'
-import Footer from './pages/Footer/Footer'
+import Home from './HomePage/Home'
+import Services from './Services/Services'
+import Signup from '../SignUp/SignUp'
+import Products from './Products/Products'
+import Team from './Team/Team'
+import Footer from './Footer/Footer'
 import Navbar from './Navbar'
 
 

@@ -5,9 +5,8 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import logo from './images/dezigno_white_logo.png'
 
-import './assets/CSS/Navbar.css'
+import './Navbar.css'
 
 function Navbar() {
     const [click, setClick] = useState(false);

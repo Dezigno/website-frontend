@@ -4,9 +4,7 @@ import './App.css';
 import Blog from './components/pages/blog/Blog';
 import BlogPage from './components/pages/blog/BlogPage'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/pages/Footer/Footer';
-import Index from './components/Index';
+import Index from './components/pages/home/Index';
 import Shop from './components/pages/Shop/Shop';
 
 

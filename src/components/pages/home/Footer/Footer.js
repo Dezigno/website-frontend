@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from '../../Button';
+import { Button } from '../Button';
 import { Link } from 'react-router-dom';
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 
