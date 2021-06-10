@@ -1,0 +1,16 @@
+.bar-icons {
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-logo {
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+    cursor: pointer;
+}
+
+.topRight {
+    display: flex;
+}
