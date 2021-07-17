@@ -1,0 +1,70 @@
+.profile {
+    padding: 40px;
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-box-sizing: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.profile-picture-container {
+    width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* border-bottom: 1px solid lightgray; */
+    padding-bottom: 40px;
+}
+
+
+.profile-picture {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text-info {
+    border: 2px solid rgb(235, 219, 245);
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 15px;
+    -webkit-box-sizing: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px 0;
+}
+
+
+.prop-label {
+    font-size: 20px;
+    color: grey;
+}
+
+.prop-container {
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+
+.prop-container:hover {
+    background-color: rgb(251, 251, 255);
+}
+
+.propBox {
+    align-items: center;
+    color: darkgray;
+}
+
+
+.phonePropBox {
+    border: 0;
+}
+
+.phonePropBox:focus {
+    border-bottom: 2px solid rgb(131, 79, 131);
+    outline: none;
+    /* border-radius: 5px; */
+}

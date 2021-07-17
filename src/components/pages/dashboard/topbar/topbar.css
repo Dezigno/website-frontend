@@ -5,11 +5,13 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    padding-top: 10px;
 }
 
 .topbarWrapper {
     height: 100%;
-    padding: 0px 20px;
+    padding: 0px 45px;
+    padding-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +20,7 @@
 .dashboard-logo {
     font-weight: bold;
     font-size: 30px;
-    color: darkblue;
+    color: rgb(60, 60, 65);
     cursor: pointer;
 }
 
@@ -34,6 +36,7 @@
     margin-top: 10px;
 }
 
-.topRight {
+.topLeft {
     display: flex;
+    /* padding-rigth: 10px; */
 }
